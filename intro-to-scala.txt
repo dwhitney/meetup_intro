@@ -1,0 +1,39 @@
+1. Setting up Scala
+a. command line tools, scala (scripts) and scalac
+b. Eclipse, IntelliJ, NetBeans
+c. sbt: launcher jar, script on path
+---
+
+2. Basic Syntax
+a. val, var (avoid mutability)
+b. import
+c. Int, String, XML literals
+d. no primitive types, everything is an object
+
+3. Classes, traits
+a. methods / properties, Uniform Access Principle
+b. traits, interfaces with implementation
+c. Self type declarations, cake pattern
+d. inline definition (anonymous subclasses)
+e. static methods -> `object`
+
+4. Collections
+a. List: List(a, b) vs. a :: b :: Nil
+b. mutable / immutable packages
+c. Tuple (not a collection)
+d. Option
+
+5. Functions
+a. conceptually: not bound a class
+b. implementation: object with an `apply` method
+c. methods can be promoted to functions
+d. function literals, closures (lambda in python, ruby lambda/block)
+e. map, filter, find
+f. for, yield
+g. folding
+
+6. Concurrent programming
+a. Actors, std-lib
+b. Akka
+c. ccstm
+d. lift actors
