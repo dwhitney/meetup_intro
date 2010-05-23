@@ -12,7 +12,7 @@ d. no primitive types, everything is an object
 
 3. Classes, traits
 a. methods / properties, Uniform Access Principle
-b. traits, interfaces with implementation
+dw b. traits, interfaces with implementation
 c. Self type declarations, cake pattern
 d. inline definition (anonymous subclasses)
 e. static methods -> `object`
