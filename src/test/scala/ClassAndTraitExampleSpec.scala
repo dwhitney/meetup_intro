@@ -1,9 +1,9 @@
 import org.scalatest.FlatSpec
 import org.scalatest.matchers.MustMatchers
 
-class TraitExampleSpec extends FlatSpec with MustMatchers {
+class ClassAndTraitExampleSpec extends FlatSpec with MustMatchers {
 
-    "TraitExample" must "fetch a status" in {
+    "A ClassAndTraitExample" must "fetch a status" in {
         
         val user = new TwitterUser("dustinwhitney"){
             override def xml = 
