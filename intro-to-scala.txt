@@ -33,7 +33,7 @@ f. for, yield
 g. folding
 
 6. Concurrent programming
-a. Actors, std-lib
+dw a. Actors, std-lib
 b. Akka
 c. ccstm
 d. lift actors
