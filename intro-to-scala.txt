@@ -11,11 +11,11 @@ c. Int, String, XML literals
 d. no primitive types, everything is an object
 
 3. Classes, traits
-a. methods / properties, Uniform Access Principle
+dw a. methods / properties, Uniform Access Principle
 dw b. traits, interfaces with implementation
-c. Self type declarations, cake pattern
-d. inline definition (anonymous subclasses)
-e. static methods -> `object`
+dw c. Self type declarations, cake pattern
+dw d. inline definition (anonymous subclasses)
+dw e. static methods -> `object`
 
 4. Collections
 a. List: List(a, b) vs. a :: b :: Nil

@@ -1,20 +1,33 @@
 import scala.io.Source
 import scala.xml.XML
+import scala.xml.Elem
 import java.net.URL
 
-trait Rest{
-    
-    def GET(url: String): String = Source.fromURL(new URL(url)).getLines().mkString
+class User(val screenName: String, val name: String, val location: String)
+        
 
+class TwitterUser(screenName: String) extends User(screenName, null, null) with TwitterService{
+        
+    private val cachedName = getName
+    private val cachedLocation = getLocation
+    
+    override val name = cachedName
+    override val location = cachedLocation
+    
 }
 
-trait Twitter extends Rest{
+object RESTful{   
+    def GET(url: String): String = Source.fromURL(new URL(url)).getLines().mkString
+}
+
+trait TwitterService{ self: User =>
     
-    val statusUrl = "http://api.twitter.com/1/users/show.xml?screen_name="
+    def xml: Elem = XML.loadString(RESTful.GET("http://api.twitter.com/1/users/show.xml?screen_name=" + screenName))
     
-    def getStatus(username: String): String = {
-        val xml = XML.load(GET(statusUrl + username))
-        (xml \ "status" \ "text").text
-    }
+    def getStatus: String = (xml \ "status" \ "text").text
+    
+    def getName: String = (xml \ "name").text
+    
+    def getLocation: String = (xml \ "location").text
     
 }
