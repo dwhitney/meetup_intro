@@ -28,9 +28,9 @@ a. conceptually: not bound a class
 b. implementation: object with an `apply` method
 c. methods can be promoted to functions
 d. function literals, closures (lambda in python, ruby lambda/block)
-e. map, filter, find
-f. for, yield
-g. folding
+sl e. map, filter, find
+sl f. for, yield
+sl g. folding
 
 6. Concurrent programming
 dw a. Actors, std-lib
