@@ -6,7 +6,7 @@ class ClassAndTraitExampleSpec extends FlatSpec with MustMatchers {
     "A ClassAndTraitExample" must "fetch a status" in {
         
         val user = new TwitterUser("dustinwhitney"){
-            override def xml = 
+            override def xml(screenName: String) = 
                 <user>
                     <name>Dustin Whitney</name>
                     <location>New York City, NY</location>
@@ -16,7 +16,7 @@ class ClassAndTraitExampleSpec extends FlatSpec with MustMatchers {
                 </user>
         }
         
-        user.getStatus must equal("fake status")
+        user.getStatus("dustinwhitney") must equal("fake status")
         user.name must equal("Dustin Whitney")
         user.location must equal("New York City, NY")
 
