@@ -1,7 +1,7 @@
-1. Setting up Scala
-a. command line tools, scala (scripts) and scalac
-b. Eclipse, IntelliJ, NetBeans
-c. sbt: launcher jar, script on path
+nh 1. Setting up Scala
+nh a. command line tools, scala (scripts) and scalac
+nh b. Eclipse, IntelliJ, NetBeans
+nh c. sbt: launcher jar, script on path
 ---
 
 2. Basic Syntax
