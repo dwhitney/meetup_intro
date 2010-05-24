@@ -7,8 +7,8 @@ nh c. sbt: launcher jar, script on path
 2. Basic Syntax
 a. val, var (avoid mutability)
 b. import
-c. Int, String, XML literals
-d. no primitive types, everything is an object
+nh c. Int, String, XML literals
+nh d. no primitive types, everything is an object
 
 3. Classes, traits
 dw a. methods / properties, Uniform Access Principle
