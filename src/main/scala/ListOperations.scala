@@ -5,6 +5,7 @@ object ListOperations{
 
         println(List("Hello","World","!"))
         
+        // examples adapted from Programming in Scala by Martin Odersky, Lex Spoon, Bill Venners
         val integers = List(1, 2, 3, 4, 5)
         val words = List("the", "quick", "brown", "fox", "jumps")
         
@@ -85,8 +86,5 @@ object ListOperations{
         (0 /: integers) (_ + _)
         (integers :\ 0) (_ + _)
         //res: Int = 15
-        
-        integers
-        (0 /: integers.tail) (_ + _)
     }
 }
